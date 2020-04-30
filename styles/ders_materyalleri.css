@@ -1,0 +1,421 @@
+#main {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;/*içerik olmadığı için daha sonra auto yapılacak*/
+    background-image: url(/images/body-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: 3;
+    opacity: 0.8;
+}
+
+#main-content {
+    margin: auto;
+    width: 1000px;
+    height: auto;
+    background-color: #EFEFEF;
+    position: relative;
+    box-shadow: 0px 0px 97px 6px black;
+}
+
+#upper-part {
+    background-color: #EFEFEF;
+    box-shadow: 0px 4px 97px 6px black;
+    height: 200px;
+    z-index: 100;
+    top: 0px;
+    position: relative;
+}
+
+#up-line {
+    background-color: black;
+    height: 20px;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+#up-left-line {
+    color: #EFEFEF;
+    bottom: 0px;
+    display: inline;
+    text-align: center;
+    margin-left: 10px;
+    float: left;
+}
+
+#up-right-line {
+    display: inline;
+    bottom: 0px;
+}
+
+#up-right-line li {
+    float: right;
+    list-style-type: none;
+    margin-right: 15px;
+    color: white;
+}
+
+#banner-left {
+    color: #EFEFEF;
+    bottom: 0px;
+    display: inline;
+    text-align: center;
+    margin: 30px;
+    float: left;
+}
+
+#banner-right li {
+    float: right;
+    list-style-type: none;
+    margin-right: 15px;
+    color: white;
+}
+
+#banner-right {
+    display: inline;
+    bottom: 0px;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+#page-heading {
+    bottom: 0px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    opacity: 0.4;
+    text-shadow: 4px 5px 7px #000000;
+}
+
+#page-subheading {
+    font-size: 40px;
+    text-shadow: 0px 1px 4px #000000;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    transition: width 0.5s, height 0.5s;
+}
+
+
+
+.social-icon:hover {
+    width: 40px;
+    height: 50px;
+}
+
+#horizontal-navbar {
+    position: sticky;
+    top: 160px;
+    margin-top: 20px;
+    width: 1000px;
+    height: 60px;
+    background-color: #EFEFEF;
+    border: 1.4px dotted;
+    border-color: gray;
+    box-shadow: 0px 4px 12px 0.2px black;
+}
+
+#horizontal-navbar ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+}
+
+#horizontal-navbar ul li {
+    float: left;
+    position: relative;
+}
+
+#horizontal-navbar ul li a {
+    display: block;
+    /*bu elemanlar inline olduğun için genişlik ve yükseklik veremeyiz bu nedenle block elemana dönüştürdük.*/
+    width: auto;
+    height: 40px;
+    padding-top: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    border: 1.4px dotted;
+    font-family: 'Inder', sans-serif;
+    font-size: 15px;
+    border-color: gray;
+
+}
+
+#horizontal-navbar ul li li {
+    width: 210px;
+    display: none;
+    transition: visibility 0s, opacity 0.5s linear;
+    
+}
+
+#horizontal-navbar ul li a {
+    background-color: #EFEFEF;
+    transition: background-color 1s;
+    color: black;
+    text-decoration: none;
+}
+
+#horizontal-navbar ul li a:hover {
+    border-top: 3px solid blue;
+    background-color: #a2a7a8;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+#horizontal-navbar ul li:hover li {
+    display: block;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.main-icon {
+    display: inline-block;
+    margin-top: -10px;
+}
+
+#horizontal-navbar ul li span::after {
+    content: "▾";
+}
+
+#body-content {
+    position: relative;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
+#middle-content {
+    float: left;
+    top: 0px;
+    margin-top: 60px;
+    position: relative;
+    height: 890px;/* içerik olunca auto yapilacak.*/
+    width: 650px;
+    border-radius: 10px;
+    background-color: #EFEFEF;
+    box-shadow: 0px 90px 40px 5px black;
+}
+
+#right-content {
+    float: left;
+    margin-top: 60px;
+    top: 0px;
+    border-radius: 10px;
+    margin-left: 5px;
+    position: relative;
+    height: auto;;
+    width: 190px;
+    background-color: #EFEFEF;
+}
+
+#footer {
+    display: block;
+    height: 22px;
+    width: 1000px;
+    background-color: black;
+    margin-left: 130px;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px; 
+    text-align: center;
+    color: white;
+}
+#slideshow{
+    width: 640px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+#small-icon{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 1px;
+    width: 25px;
+}
+#vertical-menu img:hover{
+     width: 26px;
+}
+#title{
+    margin-left:10px;
+    width: 160px;
+    text-align: center;
+    border-radius: 10px 0px 10px 0px;
+    background-color: gray;
+}
+#paragraph{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 16px;
+    padding: 5px;
+    border:1px dotted;
+    border-radius: 8px;
+}
+#button{
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 2px solid;
+}
+#button:hover{
+    background-color: grey;
+}
+#heading1{
+    margin-left: 10px;
+    text-align: center;
+}
+#middle-img{
+    display: block;
+    margin: auto;
+    width: 550px
+}
+#img-ref{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family:serif;
+    font-size: 12px;
+}
+#text-ort{
+    text-align: center;
+    font-size: 50px;
+}
+#list-box{
+    display: block;
+    width: 400px;
+}
+select{
+    height: 30px;
+    width: 600px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+
+#vertical-menu {
+    position: sticky;
+  padding: 5px;
+    float:left;
+    top: 5px;
+    margin-top: 60px;
+    margin-left: -165px;
+    margin-right: 5px;
+    padding: 5px;
+    height: auto;
+    /*içerik ekleyince auto yapacağiz.*/
+    width: 160px;
+    background-color:#EFEFEF;
+    z-index: 100;
+    border-radius: 5px;
+}
+
+#vertical-menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#vertical-menu ul li ul {
+    display: none;
+    position: absolute;
+    left: 120px;
+    top: 0px;
+}
+#vertical-menu ul li:hover ul {
+    display: inline-block;
+    margin-left: 40px;
+}
+#vertical-menu ul li {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+
+}
+#vertical-menu ul li a {
+    display: block;
+    /*bu elemanlar inline olduğun için genişlik ve yükseklik veremeyiz bu nedenle block elemana dönüştürdük.*/
+    width: auto;
+    min-height: 40px;
+    height: auto;
+    width: auto;
+    padding-top: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    border: 1.4px dotted;
+    font-family: 'Inder', sans-serif;
+    font-size: 15px;
+        color: black;
+    border-color: gray;
+    background-color: #EFEFEF;
+}
+#vertical-menu ul li li a{
+    min-width:150px;
+    width: auto;
+}
+
+#vertical-menu ul li li {
+    width: 120px;
+    transition: visibility 0s, opacity 0.5s linear;
+    
+}
+
+#vertical-menu ul li a {
+
+    transition: background-color 1s;
+    color: black;
+    text-decoration: none;}
+#vertical-menu ul li span::after {
+    content: " 	►";
+}
+
+
+#vertical-menu ul li a:hover {
+    border-top: 3px solid blue;
+    background-color: #a2a7a8;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
